@@ -1,0 +1,16 @@
+﻿@model EmployeeManagement3.Models.Employee
+@{ 
+    Layout = "~/views/shared/_layout.cshtml";
+
+}
+<form asp-controller="home" asp-action="create" method="post">
+    <div>
+        <label asp-for="Name">Name </label>
+        <input asp-for="Name" name="Name" value="" />
+    </div>
+    <div>
+        <label asp-for="Email">Email </label>
+        <input asp-for="Email" name="Email" value="" />
+    </div>
+    <button>Create</button>
+</form>
